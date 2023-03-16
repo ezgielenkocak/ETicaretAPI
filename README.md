@@ -1,4 +1,12 @@
 
+Klasör yapısı:
+Core Klasörü=> Domain ve Application Katmanı
+Infrastructure Klasörü=> Infrastructure ve Persistence Katmanı
+Presentation Klasörü=>API, MVC vb.
+
+
+
+
 
 Dıştan içe:
 *Presentation/Persistence/Infrastructure => Repository- Service Interface(Application) =>Domain
