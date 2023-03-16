@@ -21,7 +21,7 @@ Referanslar: Her katman kendinden bir önceki katmanı referans eder.
 
 Presentation, Infrastructure, Persistence  yatay ilişkiye sahip direkt olarak birbirlerini referan edemez.
 
-       ONION ARCHITECTURE:
+    ONION ARCHITECTURE:
 -Domain(Domain Entities/Core) Katmanı;
  *Merkezi Katman
  ***************Entities, Value Object, Enumeration, Entitiy Exceptions**********
@@ -54,3 +54,12 @@ Presentation, Infrastructure, Persistence  yatay ilişkiye sahip direkt olarak b
   
   
   
+IOC Container kullanma sebebimiz;
+Presentation-Persistence-Infrastructure katmanı yatay ilişkiye sahip. Yani birbirlerini doğrudan refere edemiyorlar.
+-ICar servisimizi düşünelim. ICar => Repository&Service Interfaces katmanında bulunur.
+-Car servisimiz ise veritabanıyla alakalı olduğunu varsayarak Persistence katmanında.
+-Presentation katmanında da API projem var diyelim. Ben car servisinin metotlarını dış dünyaya sunmak istiyorum fakat persistence katmanını refere edemiyorum.
+-O zaman dependency injection ile ICar servisini alırım ve CarService'in tüm metotlarına ulaşabilirim.
+
+
+
