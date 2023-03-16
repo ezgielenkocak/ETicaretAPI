@@ -1,5 +1,6 @@
 
 Klasör yapısı:
+
 Core Klasörü=> Domain ve Application Katmanı
 Infrastructure Klasörü=> Infrastructure ve Persistence Katmanı
 Presentation Klasörü=>API, MVC vb.
