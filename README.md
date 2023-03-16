@@ -55,6 +55,7 @@ Presentation, Infrastructure, Persistence  yatay ilişkiye sahip direkt olarak b
   
   
 IOC Container kullanma sebebimiz;
+
 Presentation-Persistence-Infrastructure katmanı yatay ilişkiye sahip. Yani birbirlerini doğrudan refere edemiyorlar.
 -ICar servisimizi düşünelim. ICar => Repository&Service Interfaces katmanında bulunur.
 -Car servisimiz ise veritabanıyla alakalı olduğunu varsayarak Persistence katmanında.
